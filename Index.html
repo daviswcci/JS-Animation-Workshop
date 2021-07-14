@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+<div class="container">
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <h1>Confetti Animation Demo</h1>
+    <div class="grid">
+        <button id="overlay" class="btn btn-danger">Spawn One</button>
+        <button id="overlay" class="btn btn-danger">Spawn Many</button>
+        <button id="overlay" class="btn btn-danger">Spawn A Burst</button>
+    </div>
+    <!-- We have two sets of buttons so that 
+    donuts can fly in front of buttons. 
+    The transparent buttons are the ones we're clicking, and the normal are just for show. -->
+    <div class="grid">
+        <button id="overlay-transparent" onclick="spawnParticle();" class="btn btn-danger">Spawn One</button>
+        <button id="overlay-transparent" onclick="spawnManyParticles();" class="btn btn-danger">Spawn Many</button>
+        <button id="overlay-transparent" onclick="spawnBurst();" class="btn btn-danger">Spawn A Burst</button>
+    </div>
+</div>
+</body>
+<script src = "Confetti.js" id="canvasContext"></script>
+</html>

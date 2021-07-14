@@ -1,0 +1,37 @@
+#canvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+#overlay{
+    z-index: 2;
+}
+#overlay-transparent{
+    z-index: 4;
+    opacity: 0;
+    
+}
+
+#overlay-transparent:hover{
+    z-index: 4;
+    opacity: .2;
+}
+
+#overlay-transparent:active{
+    z-index: 4;
+    opacity: 1;
+}
+
+#overlay-transparent{
+    z-index: 4;
+    opacity: 0;
+    
+}
+
+.grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
