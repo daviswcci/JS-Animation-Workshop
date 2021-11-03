@@ -33,7 +33,7 @@ class Particle{
     }
     draw(){
         context.globalAlpha = 1;
-        context.drawImage(donut,this.x, this.y, 20, 20);
+        context.drawImage(donut,this.x, this.y, 40, 40);
     }
     update(i){
         this.y -= this.yMomentum;
@@ -61,7 +61,7 @@ class BurstParticle{
         this.opacity -= .01;
         this.opacity = Math.max(0, this.opacity);
         context.globalCompositeOperation = "destination-over";
-        context.drawImage(altDonut, this.x, this.y, 20, 20)
+        context.drawImage(altDonut, this.x, this.y, 40, 40)
     }
     update(i){
         this.y -= this.yMomentum;
